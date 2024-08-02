@@ -11,10 +11,10 @@ function HeroSection() {
         src="https://img.freepik.com/premium-photo/celebrate-st-patrick39s-day-with-magical-hat-clovers-surrounded-by-green-foilage_358001-55206.jpg?w=996" 
         alt="Hero" 
       />
-      <div className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white space-y-4">
+      <div className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white space-y-4 slider">
         <h1 className="text-4xl font-bold slide-in delay-0">Welcome to Cap'n'style</h1>
         <p className="text-lg slide-in delay-2000"> We don't just sell caps, we fashion cloth🥰</p>
-        <button className="px-4 py-2 bg-blue-500 rounded hover:bg-blue-700 slide-in delay-4000">
+        <button className="px-4 py-2 bg-green-600 rounded slide-in delay-4000">
           SHOP NOW
         </button>
       </div>

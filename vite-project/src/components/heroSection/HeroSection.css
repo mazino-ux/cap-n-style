@@ -41,8 +41,9 @@
     animation-delay: 2s;
   }
   
-  .text-overlay button {
-    animation-delay: 4s;
+  .slider button:hover{
+    background: linear-gradient(15deg, #073d35 40%, #4fc4b38f  60.1%);
+    box-shadow: 0 2px 5px 0 #acacac98;
   }
   
   @keyframes slide-in {
