@@ -90,7 +90,7 @@ function DashboardTab() {
                                             </tr>
                                         </thead>
                                         
-                                        {product.map((item,index) => {
+                                        {/* {product.map((item,index) => {
                                             const {title,price,imageUrl, category,date} = item;
                                             return(
                                                 <tbody key={index}>
@@ -135,7 +135,7 @@ function DashboardTab() {
                                                 </tr>
                                                 </tbody>
                                             )
-                                        })}
+                                        })} */}
                                     </table>
 
                                 </div>
