@@ -20,6 +20,10 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import AddProduct from "./pages/admin/page/AddProduct";
 import UpdateProduct from "./pages/admin/page/UpdateProduct";
+import Allproducts from "./pages/allproducts/AllProducts";
+import Terms from "./pages/terms/Terms";
+import PrivacyPolicy from "./pages/privacy/PrivacyPolicy";
+// import Banner from "./components/banner/Banner";
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/allproducts" element={<Allproducts />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          {/* <Route path="/banner" element={<Banner />} /> */}
           <Route path="/order" element={
             <ProtectedRoutes>
               <Order />
@@ -36,7 +44,7 @@ function App() {
           <Route path="/dashboard" element={
             <ProtectedRoutesForAdmin><Dashboard /></ProtectedRoutesForAdmin>
           } />
-          <Route path="/productinfo::id" element={<ProductInfo />} />
+          <Route path="/productinfo/:id" element={<ProductInfo />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/addproduct" element={
@@ -45,7 +53,7 @@ function App() {
             <ProtectedRoutesForAdmin><UpdateProduct /></ProtectedRoutesForAdmin>} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
-        <ToastContainer/>
+        <ToastContainer/> 
       </Router>
     </MyState>
 

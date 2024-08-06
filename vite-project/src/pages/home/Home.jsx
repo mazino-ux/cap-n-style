@@ -10,6 +10,7 @@ import Testimonial from '../../components/testimonials/Testimonial'
 import Track from '../../components/track/Track'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, deleteFromCart } from '../../redux/cartSlice.jsx'
+import Banner from '../../components/banner/Banner.jsx'
 
 function Home() {
     const dispatch = useDispatch();
@@ -35,6 +36,7 @@ function Home() {
        <HeroSection />
        <Filter />
        <ProductCard />
+       <Banner />
        <Track />
        <Testimonial />
     </Layout>
