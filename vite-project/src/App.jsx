@@ -74,10 +74,15 @@ export const ProtectedRoutes = ({ children }) => {
 export const ProtectedRoutesForAdmin = ({children}) => {
   const admin = JSON.parse(localStorage.getItem('user'))
   console.log(admin.user.email)
-  if (admin.user.email === 'mazinoishioma@gmail.com') {
+  if (admin.user.email === 'bamidelealabi06@gmail.com' || admin.user.email === 'mazinoishioma@gmail.com') {
     return children
   }
   else {
-    return <Navigate to='/login' />
+    return <Navigate to='/' />
   }
 }
+
+
+
+
+// PASSWORD - Delaruh@1651 Delaruh@1651

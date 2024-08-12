@@ -79,7 +79,7 @@ export default function Navbar() {
                     </Link>
                   </div>
 
-                  {user?.user?.email === 'mazinoishioma@gmail.com' ? <div className="flow-root">
+                  {user?.user?.email === 'mazinoishioma@gmail.com' || user?.user?.email === 'bamidelealabi06@gmail.com'  ? <div className="flow-root">
                     <Link to={'/dashboard'} className="-m-2 block p-2 font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       ADMIN
                     </Link>
@@ -140,9 +140,21 @@ export default function Navbar() {
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 <Link to={'/'} className='flex'>
-                  <div className="flex">
-                    <h1 className='text-2xl font-bold text-black px-2 py-1 rounded' style={{ color: mode === 'dark' ? 'white' : '', }}>Cap'n'style</h1>
+                  <div className="flex items-center">
+                      <img 
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLnhRvBWWr9lMS1heAOuJT8m8IPHhEKgcVQQYoMmq7QKyPzlX8AsYb0qdC5Ef1nIwNxw7-zhKQjw3FdIyKjM_7SCrXLnhDldBp8y_H1R4puU21ADCELGOXwqgk_lF6ygSJGKqkBNzMVprBQZjBUy50-fneHiTJPlH7BP3yFEY25woudFFkl3JNHgDjMUI/s320/logo.png" 
+                        alt="Logo" 
+                        className="w-16 h-14 md:w-20 md:h-16"
+                      />
+                      <h1 
+                        className="text-xl md:text-2xl font-bold text-black px-0 py-1 rounded" 
+                        style={{ color: mode === 'dark' ? 'white' : '' }}
+                      >
+                        Cap'n'style 
+                        <span className="text-gray-400"> .</span>
+                      </h1>
                   </div>
+
                 </Link>
               </div>
 
@@ -156,7 +168,7 @@ export default function Navbar() {
                     Order
                   </Link>
 
-                  {user?.user?.email === 'mazinoishioma@gmail.com'?
+                  {user?.user?.email === 'mazinoishioma@gmail.com' || user?.user?.email === 'bamidelealabi06@gmail.com'?
                    <Link to={'/dashboard'} className="text-sm font-medium text-gray-700" style={{ color: mode === 'dark' ? 'white' : '', }}>
                     Admin
                   </Link> : ""
