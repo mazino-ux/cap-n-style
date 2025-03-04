@@ -1,0 +1,19 @@
+# Ignore dependencies and generated files
+node_modules/* linguist-vendored
+dist/* linguist-vendored
+build/* linguist-vendored
+
+# Ignore JSON and XML config files
+*.json linguist-vendored
+*.xml linguist-vendored
+*.lock linguist-vendored
+
+# Ignore HTML, CSS, and Markdown files from language count
+*.css linguist-vendored
+*.html linguist-vendored
+*.md linguist-vendored
+
+# Prioritize TypeScript and Java
+*.ts linguist-detectable
+*.tsx linguist-detectable
+*.java linguist-detectable
